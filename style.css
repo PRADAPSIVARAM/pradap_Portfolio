@@ -1,8 +1,8 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #f5f5f5;
+    background-color: #121212;
 }
 
 /* Navbar Styles */
@@ -12,33 +12,35 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(18, 18, 18, 0.9);
 }
 
 .navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
+    color: #f5f5f5;
 }
 
 .nav-link {
     font-weight: 500;
     transition: color 0.3s ease;
+    color: #f5f5f5;
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #1abc9c;
 }
 
 /* Main Section */
 .main-section {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/hero-bg.jpg') no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.5)), url('path/to/hero-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #f5f5f5;
     animation: fadeIn 2s ease-in-out;
     position: relative;
 }
@@ -57,20 +59,22 @@ body {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
     animation: bounceIn 1s ease-in-out;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #16a085;
+    border-color: #16a085;
 }
 
 /* Section Styles */
 section {
     padding: 5rem 0;
+    background-color: #121212;
+    color: #f5f5f5;
 }
 
 .section-content {
@@ -85,6 +89,7 @@ section {
     margin-bottom: 1rem;
     position: relative;
     display: inline-block;
+    color: #1abc9c;
 }
 
 .section-heading::after {
@@ -95,7 +100,7 @@ section {
     transform: translateX(-50%);
     width: 50%;
     height: 3px;
-    background-color: #adb5bd;
+    background-color: #f5f5f5;
     transition: width 0.3s ease;
 }
 
@@ -108,46 +113,37 @@ section {
 /* Card styling */
 .card {
     border-radius: 8px;
-    /* Rounded corners for cards */
     border: none;
-    /* Remove border */
     transition: transform 0.2s ease-in-out;
-    /* Smooth transition for hover effect */
+    background-color: #1f1f1f;
+    color: #f5f5f5;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    /* Lift the card slightly on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card-body {
     padding: 1.25rem;
-    /* Padding inside each card */
 }
 
 .card-title {
     font-size: 1.25rem;
-    /* Larger font size for card titles */
     font-weight: bold;
-    /* Bold font weight for card titles */
     margin-bottom: 0.75rem;
-    /* Bottom margin for card titles */
+    color: #1abc9c;
 }
 
 .card-text {
     font-size: 1rem;
-    /* Font size for card text */
-    color: #6c757d;
-    /* Gray color for card text */
+    color: #bfbfbf;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .card {
         margin-bottom: 1.5rem;
-        /* Bottom margin for cards on smaller screens */
     }
 }
 
@@ -155,7 +151,6 @@ section {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     overflow: scroll;
 }
 
@@ -166,29 +161,25 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* This will make sure the image covers the area while maintaining aspect ratio */
     object-position: center;
-    /* This centers the image within the area */
 }
 
 /* Skills Section */
 .skill-group {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     height: 100%;
-    /* Ensure all skill groups take full height */
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
 }
 
 .skill-heading {
     font-size: 1.5rem;
-    color: #343a40;
+    color: #1abc9c;
     margin-bottom: 15px;
 }
 
@@ -197,73 +188,63 @@ section {
     padding: 0;
     margin: 0;
     flex-grow: 1;
-    /* Allow list to expand and fill remaining space */
 }
 
 .skill-item {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
+    background-color: #333;
+    border: 1px solid #444;
     border-radius: 4px;
     padding: 10px 15px;
     margin: 5px;
     transition: background-color 0.3s, transform 0.3s;
     cursor: pointer;
+    color: #f5f5f5;
 }
 
 .skill-item:hover {
-    background-color: #e9ecef;
+    background-color: #444;
     transform: translateY(-3px);
 }
 
 /* Section Background Colors */
 #about {
-    background-color: #f8f9fa;
-    /* Lightest */
+    background-color: #121212;
 }
 
 #education {
-    background-color: #e9ecef;
-    /* Second lightest */
+    background-color: #1f1f1f;
 }
 
 #skills {
-    background-color: #dee2e6;
-    /* Third */
+    background-color: #121212;
 }
 
 #certifications {
-    background-color: #ced4da;
-    /* Fourth */
+    background-color: #1f1f1f;
 }
 
 #profiles {
-    background-color: #e9ecef;
-    /* Fifth */
+    background-color: #121212;
 }
 
 #contact {
-    background-color: #dee2e6;
-    /* Sixth */
+    background-color: #1f1f1f;
 }
 
 /* CSS for profile links */
 .profile-links {
     text-align: center;
-    /* Center align the inline elements */
 }
 
 .profile-link {
     display: block;
-    /* Display links as block */
     margin: 0 auto;
-    /* Center align links */
-    color: #333;
+    color: #1abc9c;
     text-decoration: none;
 }
 
 .profile-link div {
     margin-top: 10px;
-    /* Space between icon and text */
     font-size: 14px;
     font-weight: 600;
 }
@@ -272,14 +253,11 @@ section {
     width: 48px;
     height: 48px;
     object-fit: contain;
-    /* Maintain aspect ratio */
     transition: transform 0.2s ease-in-out;
-    /* Optional: Add hover effect */
 }
 
 .profile-icon:hover {
     transform: scale(1.2);
-    /* Optional: Scale up on hover */
 }
 
 @media (max-width: 576px) {
@@ -298,18 +276,18 @@ section {
 
 /* Footer Styles */
 footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
     padding: 2rem 0;
 }
 
 footer a {
-    color: #fff;
+    color: #f5f5f5;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #007bff;
+    color: #1abc9c;
 }
 
 /* Animations */
@@ -317,7 +295,6 @@ footer a:hover {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -328,7 +305,6 @@ footer a:hover {
         transform: translateY(-100px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -340,7 +316,6 @@ footer a:hover {
         transform: translateY(100px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -352,12 +327,10 @@ footer a:hover {
         transform: scale(0.1);
         opacity: 0;
     }
-
     60% {
         transform: scale(1.2);
         opacity: 1;
     }
-
     100% {
         transform: scale(1);
     }
