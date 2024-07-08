@@ -83,6 +83,12 @@ section {
     max-width: 800px;
     margin: 0 auto;
 }
+.mobile{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
 
 .section-heading {
     font-size: 2.5rem;
