@@ -73,12 +73,13 @@ body {
 /* Section Styles */
 section {
     padding: 5rem 0;
-    background-color: #121212;
+    background-color: #1f1f1f; /* Uniform background color */
     color: #f5f5f5;
+    text-align: center;
 }
 
+/* Section Content Styles */
 .section-content {
-    text-align: center;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -90,6 +91,13 @@ section {
     position: relative;
     display: inline-block;
     color: #1abc9c;
+}
+
+.section-heading-line {
+    width: 50px;
+    height: 2px;
+    background-color: #007bff;
+    margin: 0 auto 2rem;
 }
 
 .section-heading::after {
@@ -108,9 +116,7 @@ section {
     width: 100%;
 }
 
-/* Custom CSS for Education Section */
-
-/* Card styling */
+/* Card Styling */
 .card {
     border-radius: 8px;
     border: none;
@@ -139,29 +145,15 @@ section {
     font-size: 1rem;
     color: #bfbfbf;
 }
+.card-issu{
+    color: #575555;
+}
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .card {
         margin-bottom: 1.5rem;
     }
-}
-
-.certification-card .card-image {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%;
-    overflow: scroll;
-}
-
-.certification-card .card-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
 /* Skills Section */
@@ -206,32 +198,7 @@ section {
     transform: translateY(-3px);
 }
 
-/* Section Background Colors */
-#about {
-    background-color: #121212;
-}
-
-#education {
-    background-color: #1f1f1f;
-}
-
-#skills {
-    background-color: #121212;
-}
-
-#certifications {
-    background-color: #1f1f1f;
-}
-
-#profiles {
-    background-color: #121212;
-}
-
-#contact {
-    background-color: #1f1f1f;
-}
-
-/* CSS for profile links */
+/* Profile Links */
 .profile-links {
     text-align: center;
 }
